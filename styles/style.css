@@ -18,19 +18,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
-}
-.fixed-header{
-    height: 65px;
     position: fixed;
     z-index: 999;
 }
+
 .header__container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #BABBC5;
 }
+
 .menu{
     display:flex;
     list-style: none;
@@ -40,7 +38,6 @@
 .menu__item{
     min-width: 134px;
     text-align: center;
-    padding:35px 0 32px;
     color:#ffffff;
 }
 
@@ -52,6 +49,7 @@
     font-family: Raleway;
     font-weight: 700;
     text-transform: uppercase;
+    display:block;
 }
 .menu__link:hover{
     border-bottom: 3px solid #BABBC5;
@@ -102,18 +100,13 @@
  
 
 .banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /*background: url(../images/header_background.jpg) center no-repeat;*/
     background: url(../images/header-background.jpg) center no-repeat;
     background-size: cover;
     padding-top: 100px;
-    height: 747px;
+    padding: 158px 0 126px;
 }
 .banner__container{
     text-align: center;
-    padding: 158px 0 126px;
     width:100%
 }
 .banner__title{
@@ -161,7 +154,9 @@
     .header__logo{
         box-sizing: border-box;
     }
-    
+    .menu__item{
+        min-width: 112px;
+    }
     .banner__title{
         font-size: 48px;
     }
@@ -191,6 +186,13 @@
     }
     .header__burger{
         display: block;
+    }
+    .header__container{
+        border: none;
+        padding:22px 0;
+    }
+    .banner__button{
+        max-width: 100%;
     }
 
 }
