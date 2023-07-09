@@ -14,7 +14,7 @@
 <script src="/style.e0c02e61.js"></script></head>
 <body>
     <header class="header">
-        <div class="my-container header__container">
+        <div class="container header__container">
             <a class="header__logo" href="#">
                 <svg width="184" height="27" viewBox="0 0 184 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.0136 21.0865H7.81939L6.38839 25.7644H0L9.09706 0.723712H14.7188L23.884 25.7644H17.4616L16.0136 21.0865ZM9.25038 16.4257H14.5826L11.908 7.74061L9.25038 16.4257Z" fill="#656980"></path>
@@ -45,7 +45,7 @@
     </header>
     <main class="main">
         <section class="banner">
-            <div class="banner__container my-container">
+            <div class="banner__container container">
                 <h1 class="banner__title">Your Favorite One Page Multi Purpose Template</h1>
                 <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Praesent commodo cursus magna vel scelerisque nisl consectetur et.
@@ -54,7 +54,7 @@
             </div>
         </section>
         <div class="features">
-            <div class="features__container my-container">
+            <div class="features__container container">
                 <article class="features__item">
                     <div class="features__icon-box">
                         <svg class="features__icon" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -199,9 +199,11 @@
         </div>        
 
         <div class="team">
-            <div class="team__container my-container">
+            <div class="team__container container">
                 <article class="team__item">
-                    <img class="team__img" src="/team_1.af4bc900.png" alt="">
+                    <div class="team__img-wrap">
+                        <img class="team__img" src="/team_1.af4bc900.png" alt="">
+                    </div>
                     <h2 class="team__name">Ruth woods</h2>
                     <p class="team__place">founder, ceo</p>
                     <p class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
@@ -225,7 +227,9 @@
                     </div>
                 </article>
                 <article class="team__item">
-                    <img class="team__img" src="/team_2.ee3d3b04.jpg" alt="">
+                    <div class="team__img-wrap">
+                        <img class="team__img" src="/team_2.ee3d3b04.jpg" alt="">
+                    </div>
                     <h2 class="team__name">Timothy Reed</h2>
                     <p class="team__place">co-founder, developer</p>
                     <p class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
@@ -249,7 +253,9 @@
                     </div>
                 </article>
                 <article class="team__item">
-                    <img class="team__img" src="/team_3.288bab2f.jpg" alt="">
+                    <div class="team__img-wrap">
+                        <img class="team__img" src="/team_3.288bab2f.jpg" alt="">
+                    </div>
                     <h2 class="team__name">Victoria Vladez</h2>
                     <p class="team__place">ui designer</p>
                     <p class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
@@ -273,7 +279,9 @@
                     </div>
                 </article>
                 <article class="team__item">
-                    <img class="team__img" src="/team_4.061512c5.png" alt="">
+                    <div class="team__img-wrap">
+                        <img class="team__img" src="/team_4.061512c5.png" alt="">
+                    </div>
                     <h2 class="team__name">Beverly Little</h2>
                     <p class="team__place">data scientist</p>
                     <p class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
@@ -351,7 +359,7 @@
         </div>
 
         <section class="download">
-            <div class="my-container">
+            <div class="container">
                 <h2 class="download__title">Are You Ready to Start? Download Now For Free!</h2>
                 <p class="download__text">Fusce dapibus, tellus ac cursus commodo</p>
                 <button class="download__button button">Download here</button>
@@ -359,12 +367,12 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__container my-container">
-            <article class="footer__item">
+        <div class="footer__container container">
+            <div class="footer__item">
                 <h2 class="footer__title">Location</h2>
                 <p class="footer__text">3481 Melrose Place Beverly Hills, CA 90210</p>
-            </article>
-            <article class="footer__item">
+            </div>
+            <div class="footer__item">
                 <h2 class="footer__title">Share with Love</h2>
                 <div class="footer__social">
                     <a href="#" class="footer__link">
@@ -383,15 +391,17 @@
                         </svg>                              
                     </a>
                 </div>
-            </article>
-            <article class="footer__item">
+            </div>
+            <div class="footer__item">
                 <h2 class="footer__title">About ActiveBox</h2>
                 <p class="footer__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
-            </article>
+            </div>
         </div>
         <div class="footer__copy">
-            <p class="footer__copy-text">Copyright © 2015 ActiveBox. All Rights Reserved
-                Made with <span class="footer__copy-span">by Kamal Chaneman</span></p>
+            <div class="footer__copy-box">
+                <p class="footer__copy-text">Copyright © 2015 ActiveBox. All Rights Reserved
+                    Made with <span class="footer__copy-span">by Kamal Chaneman</span></p>
+            </div>
         </div>
     </footer>
     
