@@ -21,7 +21,7 @@ ul{
         text-transform: uppercase;
         max-width: 370px;
         width: 100%;
-        padding: 16px;
+        padding: 21px 16px;
         border:none; 
         color: #ffffff;
         background: #FF4343;;
@@ -29,23 +29,68 @@ ul{
         position: relative;
         &:hover{
             background:#E71414;
+            transition: background 0.5s linear;
         }
         &:active{
             background: #FF4343;
             box-shadow: 4px 4px 30px 0px #FF4343;
         }
 }
+.nav-link{
+    padding:33px 0 40px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 13px;
+    font-family: Raleway;
+    //font-weight: 700;
+    //text-transform: uppercase;
+    //display:block;
+    //position: relative;
+       
+    &:hover{
+        color: #babbc5;
+    }
+
+    &:active, &:focus{
+        color:#E71414
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 100%; 
+        width: 0;
+        height: 3px;
+        background-color: #babbc5;
+        transition: width 0.3s ease; 
+    }
+    &:hover::before{
+        width: 100%; 
+        left: 0; 
+    }
+
+    &:active::before{
+        background-color:#E71414
+    }
+        
+}
+.nav-item{
+    min-width: 134px;
+    //text-align: center;
+    color:#ffffff;
+    @media(max-width:1024px){
+        min-width: 112px;
+    }
+}
 .header{
-    width: 100%;
+   // width: 100%;
     top: 0;
     left: 0;
-    position: fixed;
-    z-index: 2;
+ //   position: fixed;
+ //   z-index: 2
 
     &__container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         position:relative;
         &::before{
             content: '';
@@ -72,6 +117,7 @@ ul{
         }
     }
     &__logo{
+        display: flex;
         box-sizing: border-box;
     }
     &__burger {
@@ -131,7 +177,7 @@ ul{
         }
     }
     &__link{
-        padding:35px 0 32px;
+        padding:44px 0 40px;
         text-decoration: none;
         color: #FFF;
         font-size: 13px;
@@ -149,16 +195,16 @@ ul{
             content: "";
             position: absolute;
             bottom: 0;
-            left: 100%; /* Исходно устанавливаем линию за пределами элемента */
+            left: 100%; 
             width: 0;
             height: 3px;
             background-color: #babbc5;
-            transition: width 0.3s ease; /* Добавляем плавность изменения ширины */
+            transition: width 0.3s ease; 
         }
         
         &:hover::before{
-            width: 100%; /* Плавно увеличиваем ширину линии при наведении */
-            left: 0; /* Сдвигаем линию влево */
+            width: 100%; 
+            left: 0; 
         }
 
         &:active::before{
@@ -170,8 +216,8 @@ ul{
     background: url(../images/header-background.jpg) center no-repeat;
     background-size: cover;
     padding-top: 100px;
-    padding: 230px 0 120px;
-    margin-bottom: 116px;
+    padding: 228px 0 124px;
+    margin-bottom: 113px;
     @media(max-width:767px){
         padding: 130px 0 30px;
     }
@@ -186,20 +232,8 @@ ul{
         font-family: Raleway;
         font-weight: 900;
         text-transform: uppercase;
-        margin-bottom: 32px;
+        margin-bottom: 30px;
         position: relative;
-        animation-name: fadeInAnimation;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: forwards;
-        @keyframes fadeInAnimation {
-            from {
-              opacity: 0;
-            }
-            to {
-              opacity: 1;
-            }
-          }
         @media(max-width:1024px){
             font-size: 48px;
         }
@@ -212,7 +246,9 @@ ul{
         color: #FFF;
         font-size: 24px;
         font-family: Raleway;
-        margin-bottom: 80px;
+        line-height: normal;
+        max-width: 1010px;
+        margin: 0 auto 80px;
         position: relative;
         @media(max-width:1024px){
             font-size: 18px;
@@ -223,17 +259,6 @@ ul{
         }       
     }
     &__button{
-        font-size: 24px;
-        font-family: Raleway;
-        font-weight: 900;
-        text-transform: uppercase;
-        max-width: 370px;
-        width: 100%;
-        padding: 16px;
-        border:none; 
-        color: #ffffff;
-        background: #FF4343;;
-        cursor: pointer;
         position: relative;
         &:hover{
             background:#E71414;
@@ -265,7 +290,7 @@ ul{
     }
 }
 .features{
-    margin-bottom: 116px;
+    margin-bottom: 114px;
     @media(max-width:1024px){
         margin-bottom: 80px;
     }
@@ -276,7 +301,7 @@ ul{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         column-gap: 30px;
-        row-gap: 89px;
+        row-gap: 71px;
         @media(max-width:1024px){
             column-gap: 20px;
             row-gap: 50px;
@@ -290,7 +315,7 @@ ul{
     }
     &__icon-box{
         justify-content: center;
-        margin-bottom: 29px;
+        margin-bottom: 49px;
     }
     &__icon{
         @media(max-width:1024px){
@@ -306,7 +331,7 @@ ul{
         font-weight: 900;
         line-height: normal;
         text-transform: uppercase;
-        margin-bottom: 29px;
+        margin-bottom: 47px;
         @media(max-width:1024px){
             font-size: 18px;
         }
@@ -680,7 +705,6 @@ ul{
         text-transform: capitalize;
         max-width: 471px;
         align-self: center;
-        margin-bottom:22px;
         @media(max-width:1024px){
             max-width: 330px;
             font-size: 24px;
