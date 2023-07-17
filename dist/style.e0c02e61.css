@@ -463,6 +463,11 @@ ul {
 .team {
   margin-bottom: 114px;
 }
+@media (max-width: 767px) {
+  .team {
+    margin-bottom: 35px;
+  }
+}
 .team__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -480,6 +485,11 @@ ul {
 @media (max-width: 767px) {
   .team__item {
     margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .team__item:last-child {
+    margin-bottom: 0;
   }
 }
 .team__img-wrap {
