@@ -471,12 +471,16 @@ ul {
 @media (max-width: 767px) {
   .team__container {
     grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 50px;
   }
 }
 .team__item {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 767px) {
+  .team__item {
+    margin-bottom: 50px;
+  }
 }
 .team__img-wrap {
   display: block;
@@ -545,6 +549,12 @@ ul {
   justify-content: center;
   border: 1px solid #C6CBCD;
 }
+.team .social .social__link:hover {
+  border: 1px solid #a39d9d;
+}
+.team .social .social__link:active {
+  box-shadow: 1px 1px 10px 0px #6e6b6b;
+}
 
 .download {
   text-align: center;
@@ -585,7 +595,7 @@ ul {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .download__button {
     max-width: 100%;
   }

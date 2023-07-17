@@ -433,12 +433,14 @@ ul{
         column-gap: 30px;
         @media (max-width:767px) {
             grid-template-columns: repeat(1,1fr);
-            margin-bottom: 50px;
         }
     }
     &__item{
         display: flex;
         flex-direction: column;
+        @media (max-width:767px) {
+            margin-bottom: 50px;
+        }
     }
     &__img-wrap{
         display: block;
@@ -499,6 +501,13 @@ ul{
             align-items: center;
             justify-content: center;
             border: 1px solid #C6CBCD;
+
+            &:hover{
+                border: 1px solid #a39d9d;
+            }
+            &:active{
+                box-shadow: 1px 1px 10px 0px #6e6b6b;
+            }
         }
     }
 }
@@ -532,7 +541,7 @@ ul{
         }
     }
     &__button{
-        @media(max-width:1024px){
+        @media(max-width:767px){
             max-width: 100%;
         }
         animation-name: downloadAnimation;
